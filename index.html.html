@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorry Friend</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      display: inline-block;
+      animation: pop 1s ease;
+    }
+    h1 {
+      color: #e63946;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+      color: #333;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #e63946;
+      color: white;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #d62828;
+    }
+    @keyframes pop {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>I'm Sorry 😔</h1>
+    <p>Dear Friend,<br> I made a mistake and I truly regret it.<br>
+    Please forgive me, because your friendship means the world to me.</p>
+    <button onclick="showLove()">Forgive Me</button>
+  </div>
+
+  <script>
+    function showLove() {
+      alert("Thank you! I promise to always value our friendship ❤️");
+    }
+  </script>
+</body>
+</html>
